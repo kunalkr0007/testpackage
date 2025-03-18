@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\TestPackage;
+namespace Kunal\TestPackage;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,10 +14,10 @@ class TestPackageServiceProvider extends ServiceProvider
     public function boot()
     {
         // Load the package routes
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+
         // Load the package views
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'testpackage');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'testpackage');
     }
 
     /**
