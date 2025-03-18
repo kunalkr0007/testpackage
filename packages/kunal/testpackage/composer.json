@@ -1,0 +1,20 @@
+{
+  "name": "kunal/testpackage",
+  "description": "A Laravel package that adds a test route and view.",
+  "autoload": {
+    "psr-4": {
+      "Kunal\\TestPackage\\": "src/"
+    }
+  },
+  "require": {
+    "illuminate/support": "^8.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kunal\\TestPackage\\TestPackageServiceProvider"
+      ],
+      "aliases": {}
+    }
+  }
+}
